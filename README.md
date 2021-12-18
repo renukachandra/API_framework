@@ -19,13 +19,13 @@ Data Model:
 ## Main Use Cases
 1. As a user, I want to create new user profile
     - Method: POST 
-    - Url: http://localhost:3000/profile
+    - Url: http://localhost:3000/profiles
     - Body: 
         ```{"id": {id}, "name": "typicode" }```
 
 2. As a user, I want to post new content
     - Method: POST 
-    - Url: http://localhost:3000/post
+    - Url: http://localhost:3000/posts
     - Body: 
         ```{"postId": {id}, "author": "author name" }```
 3. As a user, I want to comment on post of someone else
@@ -45,6 +45,18 @@ Data Model:
    - Method: GET
    - Url: http://localhost:3000/profiles?name={username}
 
+7. As a user, I want to delete my profile
+    - Method: DELETE 
+    - Url: http://localhost:3000/profiles/{id}
+
+8. As a user, I want to delete my post
+    - Method: DELETE 
+    - Url: http://localhost:3000/posts/{id}
+
+9. As a user, I want to delete my comment
+    - Method: DELETE 
+    - Url: http://localhost:3000/comments/{id}
+    - 
 ## Execution process
 1. Install python 3.9 from https://www.python.org/downloads/
 2. Install Node.js from https://nodejs.org/en/download/
