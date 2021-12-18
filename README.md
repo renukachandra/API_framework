@@ -19,13 +19,13 @@ Data Model:
 ## Main Use Cases
 1. As a user, I want to create new user profile
     - Method: POST 
-    - Url: http://localhost:3000/profiles
+    - Url: http://localhost:3000/profile
     - Body: 
         ```{"id": {id}, "name": "typicode" }```
 
 2. As a user, I want to post new content
     - Method: POST 
-    - Url: http://localhost:3000/posts
+    - Url: http://localhost:3000/post
     - Body: 
         ```{"postId": {id}, "author": "author name" }```
 3. As a user, I want to comment on post of someone else
@@ -45,26 +45,12 @@ Data Model:
    - Method: GET
    - Url: http://localhost:3000/profiles?name={username}
 
-7. As a user, I want to delete my profile
-    - Method: DELETE 
-    - Url: http://localhost:3000/profiles/{id}
-
-8. As a user, I want to delete my post
-    - Method: DELETE 
-    - Url: http://localhost:3000/posts/{id}
-
-9. As a user, I want to delete my comment
-    - Method: DELETE 
-    - Url: http://localhost:3000/comments/{id}
-
 ## Execution process
 1. Install python 3.9 from https://www.python.org/downloads/
-2. Install robotframework with command "pip install robotframework"
-3. Install robotframework resquests library for API calls with command "pip install robotframework-requests"
-4. Install Node.js from https://nodejs.org/en/download/
-5. Install json-server globally with command "npm install -g json-server"
-6. In the project directory run " json-server db.json" to run json server
-7. open a new terminal and execute robot framework suite with command "robot api_tests.robot"
-8. Finally test results can be referred in terminal output and log.html after execution is finished
+2. Install Node.js from https://nodejs.org/en/download/
+3. Install json-server globally with command "npm install -g json-server"
+4. In the project directory run " json-server db.json" to run json server
+5. execute robot framework suite with command "robot api_tests.robot"
+6. Finally test results can be referred in terminal output and log.html after execution is finished
 
 ![img.png](img.png)
