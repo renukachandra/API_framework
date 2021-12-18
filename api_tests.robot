@@ -80,5 +80,5 @@ DELETE User should get error if trying to delete a comment by non-existent id
 
 *** Keywords ***
 generate random number
-    ${random} =	Evaluate	random.randint(0, 100)
+    ${random} =	Evaluate	random.randint(0, 10)
     [Return]  ${random}
