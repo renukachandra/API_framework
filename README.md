@@ -35,7 +35,7 @@ Data Model:
        ```{"postId": {id}, "body": "comment content" }```
 4. As a user, I want to see my post by post id
    - Method: GET
-   - Url: http://localhost:3000/posts?{ID}
+   - Url: http://localhost:3000/posts/{ID}
 
 5. As a user, I want to see the comments on my post by post id
    - Method: GET
